@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Best Coffee Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <h1 id="title">Best Coffee Survey Form</h1>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+    <p id="description">Thank you for your input on the best coffee:</p>
+    <form id="survey-form">
+      <label id="name-label">Name: <input id="name" name="name" type="text" required placeholder="Enter your Name"/></label>
+      <label id="email-label">Email: <input id="email" name="email" type="email" required placeholder="Enter your Email"/></label>
+      <label id="number-label">Age: <input id="number" type="number" name="number" min="1" max="120" placeholder="Age"/></label>
+      <label id="best coffee">Which Coffee Brand has the Best Coffee?
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Folgers</option>
+          <option value="2">Seattle's Best</option>
+          <option value="3">Starbucks</option>
+            <option value="4">Nescafe</option>
+          </select>
+      </label>
+      <legend>Iced or Hot Coffee?</legend>
+        <label id="Iced-label"><input type="radio" name="Coffee-Type" class="inline" value="1" checked />Iced Coffee</label>
+        <label id="Hot-label"><input type="radio" name="Coffee-Type" class="inline" value="2" />Hot Coffee</label>
+      <legend>Add-ons:</legend>
+        <label id="Add-ons-label"><input class="inline" id="Add-ons" type="checkbox" required name="Splenda" value="1" /> Splenda</label>
+        <label id="Add-ons-label"><input class="inline" id="Add-ons" type="checkbox" required name="Regular Sugar" value="2" /> Regular Sugar</label>
+        <label id="Add-ons-label"><input class="inline" id="Add-ons" type="checkbox" required name="Creamer" value="3"  /> Creamer</label>
+        <label id="Add-ons-label"><input class="inline" id="Add-ons" type="checkbox" required name="Half n Half" value="4" /> Half n Half</label>
+        <label id="Add-ons-label"><input class="inline" id="Add-ons" type="checkbox" required name="None" value="5" /> None</label>
+        <label for="CoffeeComments"> Best Coffee Comments and Suggestions:
+          <textarea id="CoffeeComments" name="CoffeeComments" rows="3" cols="30" placeholder="The best coffee..."></textarea>
+        </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

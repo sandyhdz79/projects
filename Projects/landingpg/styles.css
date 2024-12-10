@@ -1,0 +1,22 @@
+#nav-bar {
+  position: fixed;
+  padding-top: 2px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+@media only screen and (max-width: 1024px){
+body {
+  margin: 0;
+	background-image: none;
+	}
+}
+
+
+header { 
+  display: flex; 
+}
+
+body {
+  padding: 4px;
+}
